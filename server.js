@@ -3,7 +3,8 @@ var app = express()
 
 app.get('/', function (req, res) {
   var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  console.log(req.headers + ' ' + ip);
+  console.log(req.headers);
+  console.log(ip);
 })
 
 
